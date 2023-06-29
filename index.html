@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Jai Bhairavi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="searchButton">search</button>
+    <button id="clearButton">reset</button>
+    <button id="cleanButton">clear</button>
+    <div class="discriptionBox">
+        <div class="discription">
+            <div class="box startCell"></div>
+            <p>Starting Point</p>
+        </div>
+        <div class="discription">
+            <div class="box endCell"></div>
+            <p>Ending Point</p>
+        </div>
+        <div class="discription">
+            <div class="box wall"></div>
+            <p>Wall</p>
+        </div>
+        
+        <div class="discription">
+            <div class="box pathI"></div>
+            <p>Path</p>
+        </div>
+        
+        <div class="discription">
+            <div class="box searchI"></div>
+            <p>Visited</p>
+        </div>
+        
+    </div>
+    <!-- <button id="resetButton">reset</button> -->
+    <table id="map"></table>
+</body>
+<script src="structure.js"></script>
+<script src="bfs.js"></script>
+<script src="animateSearch.js"></script>
+<script src="buttons.js"></script>
+</html>

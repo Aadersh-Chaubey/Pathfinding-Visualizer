@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+body{
+    height: 100vh;
+    
+}
+.box{
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+.discriptionBox{
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    /* align-items: center; */
+    justify-content: center;
+}
+.discription{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+#map{
+    border-collapse: collapse;
+    width: 100%;
+    height: 80%;
+}
+#map td{
+    border: 1px black solid;
+    padding: 7px;
+}
+.wall{
+    background: #000;
+    animation-name: wallA;
+    animation-duration: 1s;
+}
+.search{
+    background: rgb(87, 194, 247);
+    animation-name: searchA;
+    animation-duration: .7s;
+}
+
+.path{
+    background: rgb(90 65 1);
+    animation-name: pathA;
+    animation-duration: .7s;
+}
+.pathI{
+    background: rgb(90 65 1);
+}
+.searchI{
+    background: rgb(87, 194, 247);
+}
+.startCell{
+    background: rgb(0, 155, 0);
+}
+
+.endCell{
+    background: rgb(255, 13, 13);
+}
+
+/* animations */
+
+@keyframes wallA{
+    20%{
+        background: rgb(59, 49, 49);
+    }
+    90%{
+        background: rgb(0, 0, 0);
+    }
+}
+
+@keyframes searchA{
+    5%{
+        background: yellow;
+    }
+    33%{
+        background: rgb(94, 214, 9);
+    }
+    100%{
+        background: rgb(87, 194, 247);
+    }
+}
+
+@keyframes pathA{
+    5%{
+        background: yellow;
+    }
+    33%{
+        background: rgb(145, 105, 5);
+    }
+    100%{
+        background: rgb(90 65 1);
+    }
+}
+
